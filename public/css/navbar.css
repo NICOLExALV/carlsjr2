@@ -1,0 +1,56 @@
+body{
+    background-color: white;
+}
+#logo{
+    width: 12rem;
+}
+.navbar {
+    margin: 0;
+    background-color: black !important;
+    padding-top: 0.1rem; 
+    padding-bottom: 0.1rem; 
+}
+.nav-item .nav-link{
+    font-family: "Barlow Condensed";
+    font-size: 1.2rem;
+    color: white;
+}
+
+.rounded-circle{
+    width: 2rem;
+}
+.navbar-nav{
+    gap: 1rem;
+}
+
+.btn-order{
+    font-size: 1.2rem;
+    font-family: "Barlow Condensed";
+    background-color: red;
+    border-radius: 0.2rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 0.5rem;
+
+}
+.btn-order:hover {
+    background-color: gold;
+    color: black;
+}
+
+.btn-nav:hover{
+    color: gold;
+}
+
+.login-link:hover {
+    color: yellow; /* Cambiar el color del texto de Login */
+    
+}
+.bi{
+    margin-right: 0.5rem;
+}
+.nav-item.order-now {
+    margin-right: 20px; /* Ajusta el valor según lo que necesites */
+}
+
+

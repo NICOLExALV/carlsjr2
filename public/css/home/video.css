@@ -1,0 +1,42 @@
+.video-container {
+    position: relative; 
+    background-color: rgb(6, 6, 6);
+    margin: 0;
+    padding: 0;
+}
+
+#orderButton {
+    top: 51%; /* Ajusta la distancia desde la parte superior */
+    right: 21%; /* Ajusta la distancia desde el lado derecho */
+    position: absolute; /* Posiciona el botón relativo al contenedor */
+    z-index: 10; /* Asegura que el botón esté encima del video */
+    display: none; /* Se muestra solo al finalizar el video */
+}
+#btn-video{
+    font-size: 2.2rem;
+    font-family: "Barlow Condensed";
+    background-color: red;
+    border-radius: 0.2rem;
+    color: white;
+    font-weight: bold;
+}
+#btn-video:hover{
+    background-color: gold;
+    color: black;
+}
+
+#myVideo{
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    max-height: 600px; /* Opcional: Limita la altura máxima */
+    object-fit: cover; /* Corta el video para ajustarse al contenedor */
+   
+}
+
+#myVideoDrink{
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    max-height: 400px; /* Opcional: Limita la altura máxima */
+    object-fit: cover; /* Corta el video para ajustarse al contenedor */
+   
+}

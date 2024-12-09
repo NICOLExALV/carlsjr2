@@ -1,0 +1,61 @@
+h1{
+    font-family: "Barlow Condensed";
+    font-size: 5rem;
+    color: gold;
+    text-align: center;
+    font-weight: bolder;
+    text-align: center;
+    margin: auto;
+}
+#location{
+    font-family: "Barlow Condensed";
+    font-size: 5rem;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    text-align: center;
+    margin: auto;
+}
+#drink{
+    color: red;
+}
+.menu{
+    background-color: rgb(6, 6, 6);
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: 515; /* Ajusta la altura automáticamente para mantener la proporción */
+    object-fit: cover; /* Corta el video para ajustarse al contenedor */
+    padding: 5rem;
+}
+.carousel-inner img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho del carrusel */
+    height: 400px; /* Establece la altura fija */
+    object-fit: cover; /* Asegura que la imagen se recorte si es más grande que el contenedor */
+}
+h6{
+    font-family: "Barlow Condensed";
+    font-size: 6rem;
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px black, -3px -3px 7px rgba(0, 0, 0, 0.418); /* Sombra en varias direcciones */
+    
+}
+.location{
+    background-color: gold;
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: 400; /* Ajusta la altura automáticamente para mantener la proporción */
+    object-fit: cover; /* Corta el video para ajustarse al contenedor */
+    padding: 4rem;
+}
+iframe{
+    border-radius: 1rem;
+}
+.drink{
+    background-color: white;
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: 400; /* Ajusta la altura automáticamente para mantener la proporción */
+    object-fit: cover; /* Corta el video para ajustarse al contenedor */
+    padding: 4rem;
+}
+.footer{
+    background-color: black;
+}

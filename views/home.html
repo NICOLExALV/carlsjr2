@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carls Jr</title>
+    <!--FRAMEWORK--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="/public/css/home/home.css">
+    <link rel="stylesheet" href="/public/css/navbar.css">
+    <link rel="stylesheet" href="/public/css/home/video.css">
+    
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!--SCRIPTS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/public/js/btnOrder.js"></script>     
+
+     <!--NAVBAR-->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a id="home" class="navbar-brand" href="/views/home.html"><img src="/public/images/carls_jr_logo_png.webp" id="logo" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link btn-nav" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-nav" href="#location">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-nav" href="">Opening hours: 9:00am - 9:00pm</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link btn-nav login-link" href="login.html"> 
+                        <i class="bi bi-person-circle fs-3"></i>Login
+                    </a>
+                </li>
+                <li class="nav-item order-now">
+                    <a class="btn-order nav-link" href="order.html">Order Now</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+     </nav>
+      
+     <!--VIDEO-->
+     <div class="video-container  position-relative">
+        <video id="myVideo" width="100%" autoplay muted>
+            <source src="/public/images/videoburger.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!--btn Order Now-->
+        <div id="orderButton" style="display: none; text-align: center; margin-top: 20px;">
+            <a class="btn" id='btn-video' href="order.html">Order Now</a>
+        </div>
+    </div>
+    
+    <!--MENU-->
+    <div id="menu" class="menu">
+        <div class="row">
+          <!-- Columna 1: Título (h1) -->
+          <div class="col-md-6 d-flex align-items-center">
+            <h1>OUR MENU</h1>
+          </div>
+          
+          <!-- Columna 2: Carrusel -->
+          <div class="col-md-6">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/public/images/guacamole-bacon.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>GUACAMOLE BACON</h6>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/public/images/bacon-swiss.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>BACON SWISS</h6>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/public/images/famous-star.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h6>FAMOUS STAR</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!--EXTRAS-->
+    <div class="drink">
+      <div class="row">
+        <div class="col-md-6">
+          <video id="myVideoDrink" width="100%" autoplay muted playsinline>
+            <source src="/public/images/videodrink.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <h1 id="drink">FREE DRINK</h1>
+        </div>
+      </div>
+    </div>
+      
+    <!--UBICACION-->
+    <div id="location" class="location">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <h1 id="location">FIND US</h1>
+        </div>
+        <div class="col-md-6">
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.3451594177413!2d-115.51717079999997!3d32.6236306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d77aff72ef585f%3A0x7615c1cbfb44946d!2sTorcaz%202629%2C%20Las%20Palomas%2C%2021188%20Mexicali%2C%20B.C.!5e0!3m2!1ses!2smx!4v1731819487917!5m2!1ses!2smx" 
+              width="100%"  
+              height="400" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <!--FOOTER-->
+    <footer class="footer text-light py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Información de contacto -->
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p>
+              <i class="bi bi-geo-alt-fill"></i> 888 Supa Pimu Ñaño , Mexicali, B.C.<br>
+              <i class="bi bi-telephone-fill"></i> +52 686-363-3605<br>
+              <i class="bi bi-envelope-fill"></i> burgersCarlsJr@restaurant.com
+            </p>
+          </div>
+          <!-- Redes sociales -->
+          <div class="col-md-4 text-center">
+            <h5>Follow Us</h5>
+            <a href="#" class="text-light mx-2"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+            <a href="#" class="text-light mx-2"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+            <a href="#" class="text-light mx-2"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a>
+          </div>
+          <!-- Copyright -->
+          <div class="col-md-4 text-end">
+            <h5>Opening Hours</h5>
+            <p>Monday - Sunday: 9:00am - 9:00pm</p>
+            <p class="mt-3">&copy; 2024 Restaurant Carls Jr. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+</body>
+</html>
