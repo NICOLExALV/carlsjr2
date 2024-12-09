@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Cargar pedidos desde el servidor
     function loadOrders() {
-        fetch("http://localhost:3000/api/ordersAdmin")
+        fetch("https://carlsjr2-production.up.railway.app/api/ordersAdmin")
             .then(response => response.json())
             .then(orders => {
                 ordersTableBody.innerHTML = ''; // Limpiar tabla
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const selectElement = document.querySelector(`.order-status[data-order-id="${orderId}"]`);
             const newStatus = selectElement.value;
 
-            fetch(`http://localhost:3000/api/ordersAdmin/${orderId}/status`, {
+            fetch(`https://carlsjr2-production.up.railway.app/api/ordersAdmin/${orderId}/status`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ status: newStatus }),

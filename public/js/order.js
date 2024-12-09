@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const order = []; // Array para almacenar el pedido
 
   // Cargar combos desde el servidor
-  fetch("http://localhost:3000/api/combos")
+  fetch("https://carlsjr2-production.up.railway.app/api/combos")
     .then(response => response.json())
     .then(combos => {
       combos.forEach(combo => {
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })),
     };
 
-    fetch("http://localhost:3000/api/orders", {
+    fetch("https://carlsjr2-production.up.railway.app/api/orders", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(orderData),
